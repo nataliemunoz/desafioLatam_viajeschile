@@ -5,12 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viajes Chile</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
- 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="assests/css/styles.css">
 </head>
 <body>
+    <!-- navbar -->
+    <nav class="menu navbar navbar-expand-md fixed-top">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#">
+          <img src="assests/img/viajes.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          Viajes Chile</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="tipoRC navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#quienessomos">Quiénes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#destacados">Destacados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
     <!-- carrusel -->
      <header>
+      <section id="inicio">
         <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -37,10 +66,122 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+        </section>
+        
      </header>
-
-
-
+    
+     <section id="quienessomos">
+      <div class="container mt-5">
+        <h1 class="titulo1">¿QUIÉNES SOMOS?</h1>
+        <hr class="linea">
+        <div class="container text-left">
+          <div class="row">
+            <div class="col-md-4 col-xs-12 parrafo">
+              <div class="icono-parrafo"><i class="fa-solid fa-plane"></i></div>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore officia asperiores quidem enim nisi dolor nostrum. Asperiores sed necessitatibus quasi explicabo, molestiae laudantium similique, incidunt culpa inventore at distinctio assumenda?
+              Perferendis, tenetur laborum similique aspernatur eligendi sapiente! Voluptatum necessitatibus ad illum vel itaque enim libero dignissimos vero nesciunt eum, nemo velit quasi.
+              Distinctio cumque aliquam nisi quasi, eius iusto. Illo laboriosam repudiandae quis, cumque quaerat perspiciatis modi expedita nesciunt nostrum, dolore recusandae, nam iure fuga magni eos. Nam ratione ullam quaerat totam.
+            </div>
+            <div class="col-md-4 col-xs-12 parrafo">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi libero illum id, quisquam facere autem at atque eum inventore, laborum aperiam ipsa. Beatae recusandae labore, ex nemo saepe blanditiis reiciendis.
+              Molestias eum aut est alias. Rem beatae voluptas ex cumque autem. Libero nesciunt dolorem, voluptatem molestiae earum non necessitatibus eos similique, quae suscipit veritatis laudantium, sed qui! Iste, provident illo.
+              Ipsum dignissimos quis mollitia! Necessitatibus, amet. Dolorem aut sequi, maxime, a maiores et nihil magnam fugiat eveniet totam autem ipsam ullam iste? Molestias, magni. Quisquam voluptas earum illo maiores tenetur?
+              <div class="icono-parrafo"><i class="fa-solid fa-mountain"></i></div>
+            </div>
+            <div class="col-md-4 col-xs-12 parrafo">
+              <div class="icono-parrafo"><i class="fa-solid fa-route"></i></div>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus tempora vel cumque deleniti porro, asperiores iure. Ab cum cumque placeat, id modi accusamus quibusdam? Vero voluptate provident ea illo quia.
+              Nostrum temporibs dics, sint natus harum totam dolorum aut ipsam tempore dolorem error aperiam velit placeat consequatur voluptatum. Exercitationem, eos at iusto quo numquam possimus doloribus!
+              Quisquam amet sint architecto ad ex suscipit repellat iste aspernatur consectetur ratione laudantium soluta praesentium quae vitae qui recusandae deleniti dolorum cum accusantium laborum sequi, dolores magni autem culpa. Repudiandae!
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+     
+     <section id="destacados">
+      <div class="mt-5">
+        <h1 class="titulo2">DESTACADOS</h1>
+        <hr class="linea">
+      </div>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col-md-3 col-xs-12">
+            <div class="card h-100">
+              <img src="assests/img/card1.jpg" class="card-img-top" alt="...">
+              <div class="card-body color">
+                <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                <p class="card-text">consectetur adipisicing elit. Commodi cupiditate voluptatem quod est vero nobis ratione sunt harum mollitia accusamus quia nesciunt, quis doloribus distinctio, vitae quaerat? Ut, eos ipsum</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-12">
+            <div class="card h-100">
+              <img src="assests/img/card2.jpg" class="card-img-top" alt="...">
+              <div class="card-body color">
+                <h5 class="card-title">Lorem ipsum dolor sit amet </h5>
+                <p class="card-text">consectetur adipisicing elit. Voluptatem quaerat illo blanditiis optio pariatur beatae ab laboriosam placeat cumque id nemo at cum voluptates dolore impedit, eveniet repellendus quo molestias.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-12">
+            <div class="card h-100">
+              <img src="assests/img/card3.jpg" class="card-img-top" alt="...">
+              <div class="card-body color">
+                <h5 class="card-title">Lorem ipsum dolor sit amet </h5>
+                <p class="card-text">consectetur adipisicing elit. Voluptatem quaerat illo blanditiis optio pariatur beatae ab laboriosam placeat cumque id nemo at cum voluptates dolore impedit, eveniet repellendus quo molestias.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-12">
+            <div class="card h-100">
+              <img src="assests/img/card4.jpg" class="card-img-top" alt="...">
+              <div class="card-body color">
+                <h5 class="card-title">Lorem ipsum dolor sit amet </h5>
+                <p class="card-text">consectetur adipisicing elit. Voluptatem quaerat illo blanditiis optio pariatur beatae ab laboriosam placeat cumque id nemo at cum voluptates dolore impedit, eveniet repellendus quo molestias.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+     <section id="contacto">
+      <div class="mt-5">
+        <h1 class="titulo3">CONTACTO</h1>
+        <hr class="linea">
+      </div>
+      <div class="container">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label text-white">Nombre</label>
+          <input type="2..0".
+           class="form-control" id="exampleFormControlInput1" placeholder="">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label text-white">Asunto</label>
+          <input type="email" class="form-control " id="exampleFormControlInput1" placeholder="">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label text-white">Mensaje</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+          <button type="button" class="btn btn-info text-white">Enviar</button>
+        </div>
+      </div>
+     </section>
+     <footer>
+      <div class="footer">
+        <h2 class="titulo-footer">Viajes Chile</h2>
+        <div class="iconos">
+          <span><i class="fa-brands fa-github"></i></span>
+          <span><i class="fa-brands fa-linkedin"></i></span>
+          <span><i class="fa-brands fa-twitter"></i></span>
+          <span><i class="fa-brands fa-facebook"></i></span>
+        </div>
+      </div>
+    </footer>
+  
+     <script src="https://kit.fontawesome.com/abccb90238.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
 </body>
 </html>
