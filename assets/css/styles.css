@@ -5,7 +5,18 @@
 body{
     background: #000;
     min-height: 100vh;
+    scroll-behavior: smooth;
 }
+.scrollmooth- {
+    scroll-behavior: smooth;
+  }
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
 .carrusel-img-size{
     height: 100vh;
 }
@@ -62,3 +73,49 @@ body{
     font-size: 24px; /* tamaño de los iconos */
     color: #fff; /* color de los iconos */
 }
+/* Estilos para dispositivos móviles */
+@media only screen and (min-width: 300px) and (max-width:800px)  {
+    .carousel-control-prev, .carousel-control-next{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-100%);
+    }
+      
+    .carousel-control-prev {
+        left: 0;
+    }
+      
+    .carousel-control-next {
+        right: 0;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+   
+    .parrafo{
+        font-size: 10px;
+    }
+    #destacados{
+        display: none;
+    }
+    #contacto{
+        padding-top: 10%;
+    }
+    .footer{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .titulo-footer{
+        font-size: 20px;
+    }
+    .iconos i{
+        font-size: 20px;
+    }
+     
+}  
+    
+/* Estilos para páginas web completas */
+ @media only screen and (min-width: 769px) {
+      
+}
+  
