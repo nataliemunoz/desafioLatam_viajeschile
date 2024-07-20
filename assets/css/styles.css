@@ -3,119 +3,100 @@
     padding: 0;
 }
 body{
-    background: #000;
-    min-height: 100vh;
-    scroll-behavior: smooth;
+    background: #000000;
+    color: #fff;
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
-.scrollmooth- {
-    scroll-behavior: smooth;
-  }
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
+.section-padding{
+    padding: 100px 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.w-100{
+    height: 100vh;
+}
+.linea{
+    border: 5px solid gray;
+}
+.titulo1, .titulo2, .titulo3{
+    text-align: center;
+    color: #fff;
+}
+.card-img-top{
+    height: 20vh;
+}
+.card-body{
+    background-color: aqua;
+    color: #fff;
+}
+.iconos{
+    background-color: aqua;
+    padding: 5px;
     width: 100%;
-    z-index: 1000;
-  }
-.carrusel-img-size{
-    height: 100vh;
 }
-#quienessomos, #destacados, #contacto{
-    height: 100vh;
+.iconos__opciones{
+    color: #fff;
+    font-size: 22px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.titulo1, .titulo2, .titulo3{
-    color: #fff;
-    text-align: center;
-}
-.linea{
-    border: 2px solid;
-}
-.parrafo{
-    color: #fff;
-}
-.icono-parrafo{
-    background-color: aqua;
-     color: #fff;
-    font-size: 20px;
-    padding: 2%;
-    display: flex;
-    justify-content: center;
-}
-.color{
-    background-color: aqua;
-}
-.footer {
-    background-color: aqua; /* fondo gris claro */
-    padding: 20px; /* espacio entre el contenido y el borde */
-    display: flex; /* establece un layout flexible */
-    justify-content: space-between; /* distribuye los elementos en la línea */
-    align-items: center; /* centra los elementos verticalmente */
-    padding-left: 25%;
-    padding-right: 25%;
-}
-.titulo-footer{
-    margin: 0; /* elimina el margen del título */
-    font-weight: none; /* título en negrita */
-    color: #fff;
-}
-.iconos {
-    display: flex; /* establece un layout flexible para los iconos */
-    align-items:end; /* centra los iconos verticalmente */
-}
-.iconos span {
-    margin: 0 10px; /* espacio entre los iconos */
-}
-.iconos i {
-    font-size: 24px; /* tamaño de los iconos */
-    color: #fff; /* color de los iconos */
-}
-/* Estilos para dispositivos móviles */
-@media only screen and (min-width: 300px) and (max-width:800px)  {
-    .carousel-control-prev, .carousel-control-next{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-100%);
-    }
-      
-    .carousel-control-prev {
-        left: 0;
-    }
-      
-    .carousel-control-next {
-        right: 0;
-    }
-    .carousel-indicators {
-        display: none;
-    }
+.footer{
+    background-color:aqua;
+    padding: 15px;
    
-    .parrafo{
-        font-size: 10px;
-    }
-    #destacados{
-        display: none;
-    }
-    #contacto{
-        padding-top: 10%;
-    }
-    .footer{
-        padding-left: 4%;
-        padding-right: 4%;
-    }
-    .titulo-footer{
-        font-size: 20px;
-    }
-    .iconos i{
-        font-size: 20px;
-    }
-     
-}  
-    
-/* Estilos para páginas web completas */
- @media only screen and (min-width: 769px) {
-      
+}
+.footer__titulo--4 {
+    display: inline-block;
+    margin-right: 50%; 
+    margin-left: 15%;
+    font-size: 25px;
+    color: #fff;
 }
   
+.footer__iconos {
+    display: inline-flex;
+    align-items: center;
+}
+  
+.footer__iconos span {
+    margin-right: 10px; 
+    font-size: 25px;
+    color: #fff;
+}
+.footer__iconos a{
+   text-decoration: none;
+   color: inherit;
+}
+
+/* dispositivos moviles */
+@media only screen and (max-width:767px){
+    .navbart-nav{
+        text-align: center;
+    }
+    #quienessomos{
+        display: none;
+    }
+    .footer__titulo--4 {
+        display: inline-block;
+        margin-right: 40%; 
+        margin-left: 1%;
+        font-size: 15px;
+        color: #fff;
+    }
+      
+    .footer__iconos {
+        display: inline-flex;
+        align-items: center;
+    }
+      
+    .footer__iconos span {
+        margin-right: 10px; 
+        font-size: 15px;
+        color: #fff;
+    }
+}
